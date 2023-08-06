@@ -1,0 +1,157 @@
+Web Options,DoD Name,Category,Sub_Category
+Active Directory Domain,Active Directory Domain Security Technical Implementation Guide (STIG) ,,
+Active Directory Forest,Active Directory Forest Security Technical Implementation Guide (STIG) ,,
+Adobe Acrobat Reader DC Continuous Track  ,Adobe Acrobat Reader DC Continuous Track Security Technical Implementation Guide ,,
+APACHE 2.2 Server for UNIX  ,APACHE 2.2 Server for UNIX Security Technical Implementation Guide ,Linux/UNIX,Applications/Services
+APACHE 2.2 Server for Windows  ,APACHE 2.2 Server for Windows Security Technical Implementation Guide ,Windows,Applications/Services
+APACHE 2.2 Site for UNIX  ,APACHE 2.2 Site for UNIX Security Technical Implementation Guide ,Linux/UNIX,Applications/Services
+APACHE 2.2 Site for Windows  ,APACHE 2.2 Site for Windows Security Technical Implementation Guide ,Windows,Applications/Services
+Apache Server 2.4 UNIX Server  ,Apache Server 2.4 UNIX Server Security Technical Implementation Guide ,Linux/UNIX,Applications/Services
+Apache Server 2.4 UNIX Site  ,Apache Server 2.4 UNIX Site Security Technical Implementation Guide ,Linux/UNIX,Applications/Services
+Apache Server 2.4 Windows Server  ,Apache Server 2.4 Windows Server Security Technical Implementation Guide ,Windows,Applications/Services
+Apache Server 2.4 Windows Site  ,Apache Server 2.4 Windows Site Security Technical Implementation Guide ,Windows,Applications/Services
+Apache Tomcat Application Sever 9  ,Apache Tomcat Application Sever 9 Security Technical Implementation Guide ,Applications,Other
+Application Layer Gateway,Application Layer Gateway (ALG) Security Requirements Guide (SRG) ,,
+Application Security and Development  ,Application Security and Development Security Technical Implementation Guide ,,
+Application Server  ,Application Server Security Requirements Guide ,,
+ArcGIS for Server 10.3  ,ArcGIS for Server 10.3 Security Technical Implementation Guide ,,
+Arista MLS DCS-7000 Series L2S  ,Arista MLS DCS-7000 Series L2S Security Technical Implementation Guide ,,
+Arista MLS DCS-7000 Series NDM  ,Arista MLS DCS-7000 Series NDM Security Technical Implementation Guide ,,
+Arista MLS DCS-7000 Series RTR  ,Arista MLS DCS-7000 Series RTR Security Technical Implementation Guide ,,
+AAA,"Authentication, Authorization, and Accounting Services (AAA) Security Requirements Guide ",,
+BIND 9.x  ,BIND 9.x Security Technical Implementation Guide ,,
+CA API Gateway ALG  ,CA API Gateway ALG Security Technical Implementation Guide ,,
+CA API Gateway NDM  ,CA API Gateway NDM Security Technical Implementation Guide ,,
+Canonical Ubuntu 18.04 LTS  ,Canonical Ubuntu 18.04 LTS Security Technical Implementation Guide ,,
+Central Log Server  ,Central Log Server Security Requirements Guide ,,
+Cisco IOS Router NDM  ,Cisco IOS Router NDM Security Technical Implementation Guide ,,
+Cisco IOS Router RTR  ,Cisco IOS Router RTR Security Technical Implementation Guide ,,
+Cisco IOS Switch L2S  ,Cisco IOS Switch L2S Security Technical Implementation Guide ,,
+Cisco IOS Switch NDM  ,Cisco IOS Switch NDM Security Technical Implementation Guide ,,
+Cisco IOS Switch RTR  ,Cisco IOS Switch RTR Security Technical Implementation Guide ,,
+Cisco IOS XE Router NDM  ,Cisco IOS XE Router NDM Security Technical Implementation Guide ,,
+Cisco IOS XE Router RTR  ,Cisco IOS XE Router RTR Security Technical Implementation Guide ,,
+Cisco IOS XE Switch L2S  ,Cisco IOS XE Switch L2S Security Technical Implementation Guide ,,
+Cisco IOS XE Switch NDM  ,Cisco IOS XE Switch NDM Security Technical Implementation Guide ,,
+Cisco IOS XR Router NDM  ,Cisco IOS XR Router NDM Security Technical Implementation Guide ,,
+Cisco IOS XR Router RTR  ,Cisco IOS XR Router RTR Security Technical Implementation Guide ,,
+Cisco IOS-XE Switch RTR  ,Cisco IOS-XE Switch RTR Security Technical Implementation Guide ,,
+Cisco NX-OS Switch L2S  ,Cisco NX-OS Switch L2S Security Technical Implementation Guide ,,
+Cisco NX-OS Switch NDM  ,Cisco NX-OS Switch NDM Security Technical Implementation Guide ,,
+Cisco NX-OS Switch RTR  ,Cisco NX-OS Switch RTR Security Technical Implementation Guide ,,
+Container Platform  ,Container Platform Security Requirements Guide ,,
+Crunchy Data PostgreSQL  ,Crunchy Data PostgreSQL Security Technical Implementation Guide ,,
+Database  ,Database Security Requirements Guide ,,
+Docker Enterprise 2.x Linux,Docker Enterprise 2.x Linux/UNIX Security Technical Implementation Guide ,,
+DNS,Domain Name System (DNS) Security Requirements Guide ,,
+EDB Postgres Advanced Server  ,EDB Postgres Advanced Server Security Technical Implementation Guide ,,
+EDB Postgres Advanced Server v11 on Windows  ,EDB Postgres Advanced Server v11 on Windows Security Technical Implementation Guide ,,
+Firewall  ,Firewall Security Requirements Guide ,,
+ForeScout CounterACT ALG  ,ForeScout CounterACT ALG Security Technical Implementation Guide ,Applications,Security
+ForeScout CounterACT NDM  ,ForeScout CounterACT NDM Security Technical Implementation Guide ,Applications,Security
+Forescout Network Access Control  ,Forescout Network Access Control Security Technical Implementation Guide ,Applications,Security
+Forescout Network Device Management  ,Forescout Network Device Management Security Technical Implementation Guide ,,
+Google Chrome,Google Chrome Current Windows Security Technical Implementation Guide ,,
+Infoblox 7.x DNS  ,Infoblox 7.x DNS Security Technical Implementation Guide ,,
+IDPS,Intrusion Detection and Prevention Systems (IDPS) Security Requirements Guide ,,
+ISEC7 EMM Suite v6.x  ,ISEC7 EMM Suite v6.x Security Technical Implementation Guide ,,
+ISEC7 Sphere  ,ISEC7 Sphere Security Technical Implementation Guide ,,
+Layer 2 Switch  ,Layer 2 Switch Security Requirements Guide ,,
+Mainframe Product  ,Mainframe Product Security Requirements Guide ,,
+McAfee Application Control 8.x   ,McAfee Application Control 8.x Security Technical Implementation Guide  ,,
+McAfee MOVE Agentless 3.0 ,McAfee MOVE Agentless 3.0 VSEL 1.9 for SVA STIG ,,
+McAfee MOVE Agentless 3.6.1,McAfee MOVE Agentless 3.6.1 Security Virtual Appliance STIG ,,
+McAfee MOVE AV Agentless 4.5  ,McAfee MOVE AV Agentless 4.5 Security Technical Implementation Guide ,,
+McAfee MOVE AV Multi-Platform 4.5  ,McAfee MOVE AV Multi-Platform 4.5 Security Technical Implementation Guide ,,
+McAfee VirusScan 8.8 Local Client  ,McAfee VirusScan 8.8 Local Client STIG ,,
+McAfee VirusScan 8.8 Managed Client  ,McAfee VirusScan 8.8 Managed Client STIG ,,
+McAfee VSEL 1.9/2.0 Local Client  ,McAfee VSEL 1.9/2.0 Local Client Security Technical Implementation Guide ,,
+McAfee VSEL 1.9/2.0 Managed Client  ,McAfee VSEL 1.9/2.0 Managed Client Security Technical Implementation Guide ,,
+MDM Server Policy,MDM Server Policy Security Technical Implementation Guide (STIG) ,,
+Microsoft Access 2013  ,Microsoft Access 2013 STIG ,,
+Microsoft Access 2016  ,Microsoft Access 2016 Security Technical Implementation Guide ,,
+Microsoft DotNet Framework 4.0  ,Microsoft DotNet Framework 4.0 Security Technical Implementation Guide ,,
+Microsoft Excel 2013  ,Microsoft Excel 2013 STIG ,,
+Microsoft Excel 2016  ,Microsoft Excel 2016 Security Technical Implementation Guide ,,
+Microsoft Exchange 2013 Mailbox Server  ,Microsoft Exchange 2013 Mailbox Server Security Technical Implementation Guide ,,
+Microsoft Exchange 2016 Edge Transport Server  ,Microsoft Exchange 2016 Edge Transport Server Security Technical Implementation Guide ,,
+Microsoft Exchange 2016 Mailbox Server  ,Microsoft Exchange 2016 Mailbox Server Security Technical Implementation Guide ,,
+Microsoft Groove 2013  ,Microsoft Groove 2013 STIG ,,
+Microsoft IIS 10.0 Server  ,Microsoft IIS 10.0 Server Security Technical Implementation Guide ,Windows,Applications/Services
+Microsoft IIS 10.0 Site  ,Microsoft IIS 10.0 Site Security Technical Implementation Guide ,Windows,Applications/Services
+Microsoft IIS 8.5 Server  ,Microsoft IIS 8.5 Server Security Technical Implementation Guide ,Windows,Applications/Services
+Microsoft IIS 8.5 Site  ,Microsoft IIS 8.5 Site Security Technical Implementation Guide ,Windows,Applications/Services
+Microsoft InfoPath 2013  ,Microsoft InfoPath 2013 STIG ,,
+Microsoft Internet Explorer 11  ,Microsoft Internet Explorer 11 Security Technical Implementation Guide ,,
+Microsoft Lync 2013  ,Microsoft Lync 2013 STIG ,,
+Microsoft Office 365 ProPlus  ,Microsoft Office 365 ProPlus Security Technical Implementation Guide ,,
+Microsoft Office System 2013  ,Microsoft Office System 2013 Security Technical Implementation Guide ,,
+Microsoft Office System 2016  ,Microsoft Office System 2016 Security Technical Implementation Guide ,,
+Microsoft OneDrive  ,Microsoft OneDrive Security Technical Implementation Guide ,,
+Microsoft OneNote 2013  ,Microsoft OneNote 2013 STIG ,,
+Microsoft OneNote 2016  ,Microsoft OneNote 2016 Security Technical Implementation Guide ,,
+Microsoft Outlook 2013  ,Microsoft Outlook 2013 STIG ,,
+Microsoft Outlook 2016  ,Microsoft Outlook 2016 Security Technical Implementation Guide ,,
+Microsoft PowerPoint 2013  ,Microsoft PowerPoint 2013 STIG ,,
+Microsoft PowerPoint 2016  ,Microsoft PowerPoint 2016 Security Technical Implementation Guide ,,
+Microsoft Project 2013  ,Microsoft Project 2013 STIG ,,
+Microsoft Project 2016  ,Microsoft Project 2016 Security Technical Implementation Guide ,,
+Microsoft Publisher 2013  ,Microsoft Publisher 2013 STIG ,,
+Microsoft Publisher 2016  ,Microsoft Publisher 2016 Security Technical Implementation Guide ,,
+Microsoft SharePoint 2013  ,Microsoft SharePoint 2013 Security Technical Implementation Guide ,,
+Microsoft Skype for Business 2016  ,Microsoft Skype for Business 2016 Security Technical Implementation Guide ,,
+Microsoft Visio 2013  ,Microsoft Visio 2013 STIG ,,
+Microsoft Visio 2016  ,Microsoft Visio 2016 Security Technical Implementation Guide ,,
+Microsoft Windows 2012 Server Domain Name System  ,Microsoft Windows 2012 Server Domain Name System Security Technical Implementation Guide ,,
+Microsoft Windows Defender Antivirus  ,Microsoft Windows Defender Antivirus Security Technical Implementation Guide ,,
+Microsoft Windows Server 2016  ,Microsoft Windows Server 2016 Security Technical Implementation Guide ,Windows,OS
+Microsoft Windows Server 2019  ,Microsoft Windows Server 2019 Security Technical Implementation Guide ,Windows,OS
+Microsoft Word 2013  ,Microsoft Word 2013 STIG ,,
+Microsoft Word 2016  ,Microsoft Word 2016 Security Technical Implementation Guide ,,
+MongoDB Enterprise Advanced 3.x  ,MongoDB Enterprise Advanced 3.x Security Technical Implementation Guide ,,
+Mozilla Firefox  ,Mozilla Firefox Security Technical Implementation Guide ,,
+MS Exchange 2013 Client Access Server  ,MS Exchange 2013 Client Access Server Security Technical Implementation Guide ,,
+MS Exchange 2013 Edge Transport Server  ,MS Exchange 2013 Edge Transport Server Security Technical Implementation Guide ,,
+MS SharePoint Designer 2013  ,MS SharePoint Designer 2013 Security Technical Implementation Guide ,,
+MS SQL Server 2014 Database  ,MS SQL Server 2014 Database Security Technical Implementation Guide ,,
+MS SQL Server 2014 Instance  ,MS SQL Server 2014 Instance Security Technical Implementation Guide ,,
+MS SQL Server 2016 Database  ,MS SQL Server 2016 Database Security Technical Implementation Guide ,,
+MS SQL Server 2016 Instance  ,MS SQL Server 2016 Instance Security Technical Implementation Guide ,,
+Multifunction Device and Network Printers  ,Multifunction Device and Network Printers STIG ,,
+Network Device Management  ,Network Device Management Security Requirements Guide ,,
+Network Infrastructure Policy  ,Network Infrastructure Policy Security Technical Implementation Guide ,,
+Oracle Database 11.2g  ,Oracle Database 11.2g Security Technical Implementation Guide ,Database,Oracle
+Oracle Database 11g Installation  ,Oracle Database 11g Installation STIG ,Database,Oracle
+Oracle Database 11g Instance  ,Oracle Database 11g Instance STIG ,Database,Oracle
+Oracle Database 12c  ,Oracle Database 12c Security Technical Implementation Guide ,Database,Oracle
+Oracle HTTP Server 12.1.3  ,Oracle HTTP Server 12.1.3 Security Technical Implementation Guide ,Database,Oracle
+Oracle Linux 6  ,Oracle Linux 6 Security Technical Implementation Guide ,Database,Oracle
+Oracle Linux 7  ,Oracle Linux 7 Security Technical Implementation Guide ,Database,Oracle
+Oracle WebLogic Server 12c  ,Oracle WebLogic Server 12c Security Technical Implementation Guide ,Database,Oracle
+PostgreSQL 9.x  ,PostgreSQL 9.x Security Technical Implementation Guide ,,
+RHEL 7  ,Red Hat Enterprise Linux 7 Security Technical Implementation Guide ,Linux/UNIX,OS
+RHEL 8  ,Red Hat Enterprise Linux 8 Security Technical Implementation Guide ,Linux/UNIX,OS
+Router  ,Router Security Requirements Guide ,,
+Solaris 10 SPARC  ,Solaris 10 SPARC Security Technical Implementation Guide ,,
+Solaris 10 X86  ,Solaris 10 X86 Security Technical Implementation Guide ,,
+Solaris 11 SPARC  ,Solaris 11 SPARC Security Technical Implementation Guide ,,
+Solaris 11 X86  ,Solaris 11 X86 Security Technical Implementation Guide ,,
+Splunk Enterprise 7.x,Splunk Enterprise 7.x for Windows Security Technical Implementation Guide ,,
+Symantec ProxySG ALG  ,Symantec ProxySG ALG Security Technical Implementation Guide ,,
+Symantec ProxySG NDM  ,Symantec ProxySG NDM Security Technical Implementation Guide ,,
+Traditional Security Checklist ,Traditional Security Checklist ,,
+Unified Endpoint Management Agent  ,Unified Endpoint Management Agent Security Requirements Guide ,,
+Unified Endpoint Management Server  ,Unified Endpoint Management Server Security Requirements Guide ,,
+Video Services Policy   ,Video Services Policy STIG  ,,
+VPN,Virtual Private Network (VPN) Security Requirements Guide ,,
+Voice Video Endpoint  ,Voice Video Endpoint Security Requirements Guide ,VTC,Other
+Voice Video Services Policy  ,Voice Video Services Policy Security Technical Implementation Guide ,VTC,Other
+Voice Video Session Management  ,Voice Video Session Management Security Requirements Guide ,VTC,Other
+VVoIP,Voice/Video over Internet Protocol (VVoIP) STIG ,VTC,Other
+vRealize,vRealize - Cassandra Security Technical Implementation Guide ,,
+Web Server  ,Web Server Security Requirements Guide ,,
+Windows 10  ,Windows 10 Security Technical Implementation Guide ,Windows,OS
+Windows Firewall with Advanced Security  ,Windows Firewall with Advanced Security Security Technical Implementation Guide ,,
+Windows PAW  ,Windows PAW Security Technical Implementation Guide ,,
+WLAN Bridge,WLAN Bridge Security Technical Implementation Guide (STIG) ,,
+WLAN Controller,WLAN Controller Security Technical Implementation Guide (STIG) ,,

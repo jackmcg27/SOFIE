@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'head.html' %}
+
+<body>
+{% include 'navbar.html' %}
+
+<div class="page-header">
+    <nav class="breadcrumb mb-0">
+        <span class="breadcrumb-item active">STIG Editor</span>
+    </nav>
+    <hr class="mt-0"/>
+</div>
+
+<p>
+    <b>Disclaimer: </b>
+    Please make sure to complete all fields with the correct information. If you fail to do so, you will not be able
+    to download your checklist. You may save at any time but, the checklist must be completed at one time. Each time
+    you click another vulnerability in the list, the previous vulnerability will be saved.
+    <br><br>
+    <b>Comments/Finding Details Format:</b> YYYY/MM/DD-521-Status_of_vulnerability: Explanation if needed.
+</p>
+
+<form method="POST" enctype="multipart/form-data">
+    <div style="width: 100%; height: 100%">
+        <div style="overflow: scroll; width: 10%; height: 750px; float: left">
+            <table style="border-collapse: collapse; width: 25%" border=1>
+                <tbody>
+                <tr>
+                    <th>Vuln ID</th>
+                </tr>
+                <th>Status</th>
+                </tr>
+                {% for i in range(0,vulnCount - 1) %}
+                    <tr>
+                    <td style="width: 100%;">
+                        <input name="vulnId" type="submit" href="/import_stig/info/editor/{{ VULN_NUMS[i] }}"
+                               value={{ VULN_NUMS[i] }}>
+                    </td>
+                    <td style="width: 100%;">{{ vulnStatus[i] }}</td>
+                {% endfor %}
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="width: 10%; height: 100%; float: left">
+            <p><b>Open: </b>{{ countO }}/{{ vulnCount }}</p>
+            <p><b>Not Reviewed: </b>{{ countNR }}/{{ vulnCount }}</p>
+            <p><b>Not a Finding: </b>{{ countNF }}/{{ vulnCount }}</p>
+            <p><b>Not Applicable: </b>{{ countNA }}/{{ vulnCount }}</p>
+        </div>
+        <div style="margin-left: 5%; height: 100%">
+            <p><b>Rule Title: </b>{{ ruleTitle }}</p>
+            <p><b>Vul ID: </b>{{ VULN_NUMS[vulnIndex] }}</p>
+            <p><b>Discussion: </b>{{ discussion }}</p>
+            <p><b>Check Text: </b>
+                {% for line in checkText %}
+                    {{ line }}<br>
+                {% endfor %}
+            </p>
+            <p><b>Fix Text: </b>
+                {% for line in fixText %}
+                    {{ line }}<br>
+                {% endfor %}
+            </p>
+            <label for="status">Status:</label>
+            <select id="status" name="fstatus">
+                <option value="Not_Reviewed" {{ 'selected' if origStatus == "Not_Reviewed" }}>Not Reviewed</option>
+                <option value="Open" {{ 'selected' if origStatus == "Open" }}>Open</option>
+                <option value="NotAFinding" {{ 'selected' if origStatus == "NotAFinding" }}>Not A Finding</option>
+                <option value="Not_Applicable" {{ 'selected' if origStatus == "Not_Applicable" }}>Not Applicable
+                </option>
+            </select>
+
+            <label for="sevOverride">Severity Override:</label>
+            <select id="sevOverride" name="fsevOverride">
+                <option value="high" {{ 'selected' if origSeverity == "high" }}>CAT I</option>
+                <option value="medium" {{ 'selected' if origSeverity == "medium" }}>CAT II</option>
+                <option value="low" {{ 'selected' if origSeverity == "low" }}>CAT III</option>
+            </select>
+
+            <p><b>Finding Details:</b></p>
+            {% if findingDet == "None" or findingDet == None %}
+                <textarea rows="6" cols="100" id="FINDING_DETAILS" name="fFINDING_DETAILS" placeholder=""></textarea><br>
+            {% else %}
+                <textarea rows="6" cols="100" id="FINDING_DETAILS" name="fFINDING_DETAILS">{{ findingDet }}</textarea><br>
+            {% endif %}
+            <p><b>Comments:</b></p>
+            {% if comments == "None" or comments == None %}
+                <textarea rows="6" cols="100" id="COMMENTS" name="fCOMMENTS" placeholder=""></textarea><br>
+            {% else %}
+                <textarea rows="6" cols="100" id="COMMENTS" name="fCOMMENTS">{{ comments }}</textarea><br>
+            {% endif %}
+            <input name="save" type="submit" value=Save>
+
+            <label for="downloadButton">Click "Save" before downloading</label>
+            <input onclick="alerts({{ incorrectVuln }})" type="submit" name="downloadButton" value=Download>
+
+            <script>
+                function alerts(javaVulns) {
+                    if ({{ catIOpen }} !== 0){
+                        alert("CAUTION: You have " + {{ catIOpen }} +" open CAT I Vulnerabilities!");
+                    }
+                    let vulns = "";
+                    if ({{ incorrectVulnLength }} !== 0){
+                        for (let i = 0; i < {{ incorrectVulnLength }}; i++){
+                            if (i === 0) {
+                                vulns = vulns.concat(javaVulns[i]);
+                            } else {
+                                vulns = vulns.concat(", ");
+                                vulns = vulns.concat(javaVulns[i]);
+                            }
+                        }
+                        alert("CAUTION: The comments/finding details of the following vulnerabilities are incorrect: \n" + vulns);
+                    }
+                }
+            </script>
+
+        </div>
+    </div>
+</form>
+</body>
+</html>

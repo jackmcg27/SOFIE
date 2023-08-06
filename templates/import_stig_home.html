@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'head.html' %}
+
+<body>
+{% include 'navbar.html' %}
+
+<div class="page-header">
+    <nav class="breadcrumb mb-0">
+        <span class="breadcrumb-item active">Imported STIG Home Page</span>
+    </nav>
+    <hr class="mt-0"/>
+</div>
+
+    <form method=post enctype=multipart/form-data>
+        <input type=file name=checklist>
+        <input type=submit value=Upload>
+    </form>
+
+</body>
+</html>

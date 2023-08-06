@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'head.html' %}
+
+<body>
+{% include 'navbar.html' %}
+
+<div class="page-header">
+    <nav class="breadcrumb mb-0">
+        <span class="breadcrumb-item active">Empty STIG Home Page</span>
+    </nav>
+    <hr class="mt-0"/>
+</div>
+
+<form method=POST enctype=multipart/form-data>
+    <div class="container-fluid">
+        <label for="category">Select a category / subcategory:</label>
+        <select id="category" name="fCategory">
+            <option value="" selected></option>
+            {% for i in range(categoryCount) %}
+                <option value="{{ STIG_Categories[i] }}" {{ 'selected' if category == STIG_Categories[i] }}>{{ STIG_Categories[i] }}</option>
+            {% endfor %}
+        </select>
+            {% if category != "" %}
+                <p></p>
+                <label for="device-app">Select an item:</label>
+                <select id="device-app" name="fdevice-app">
+                {% for i in range(categoryCount) %}
+                    {% if category == STIG_Categories[i] %}
+                        {% for j in range(STIGcount) %}
+                            {% if STIGcsvList[j][2] + ' / ' + STIGcsvList[j][3] == category %}
+                                <option value="{{ STIGcsvList[j][1] }}">{{ STIGcsvList[j][0] }}</option>
+                            {% elif  STIGcsvList[j][2] + ' / ' + STIGcsvList[j][3] == 'nan / nan' and category == 'Other' %}
+                                <option value="{{ STIGcsvList[j][1] }}">{{ STIGcsvList[j][0] }}</option>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+                </select>
+                <p></p>
+                <label for="fileName">Enter the name you want the checklist to have without a file extension</label>
+                <input type="text" id="fileName" name="ffileName">
+            {% endif %}
+        <input type=submit value=Next>
+    </div>
+</form>
+
+</body>
+
+</html>

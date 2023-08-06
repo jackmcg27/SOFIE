@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'head.html' %}
+
+<body>
+{% include 'navbar.html' %}
+
+<div class="page-header">
+    <nav class="breadcrumb mb-0">
+        <span class="breadcrumb-item active">User Entered STIG Info Page</span>
+    </nav>
+    <hr class="mt-0"/>
+</div>
+<p><b>Disclaimer: </b>Make sure every field is filled out to advance to next section!</p>
+<form method=post enctype=multipart/form-data>
+    <label for="Hostname">Hostname: </label><br>
+    {% if hostname != None %}
+        <input type="text" id="Hostname" name="fhostname" value={{ hostname }}>
+    {% endif %}
+    {% if hostname == None %}
+        <input type="text" id="Hostname" name="fhostname" value="">
+    {% endif %}
+    <p></p>
+    <label for="ip">IP-Address: </label><br>
+    {% if ipAddress != None %}
+        <input type="text" id="ip" name="ip" value={{ ipAddress }}>
+    {% endif %}
+    {% if ipAddress == None %}
+        <input type="text" id="ip" name="ip" value="">
+    {% endif %}
+    <p></p>
+    <label for="system_role">Select the system role:</label>
+    <select id="system_role" name="fsystem_role">
+        <option value="None">None</option>
+        <option value="Workstation" {{ 'selected' if systemRole == "Workstation" }}>Workstation</option>
+        <option value="Member Server" {{ 'selected' if systemRole == "Member Server" }}>Member Server</option>
+        <option value="Domain Controller" {{ 'selected' if systemRole == "Domain Controller" }}>Domain Controller
+        </option>
+    </select>
+    <p></p>
+    <label for="web">Select yes if this is a web or database STIG:</label>
+    <select id="web" name="fweb">
+        <option value="false" {{ 'selected' if web == "false" }}>No</option>
+        <option value="true" {{ 'selected' if web == "true" }}>Yes</option>
+    </select>
+    <p></p>
+    <input onclick="alerts()" type="submit" value=Next>
+    <script>
+        function alerts() {
+            var Hostname = document.getElementById("Hostname").value;
+            var IP = document.getElementById("ip").value;
+            var getSystemRole = document.getElementById("system_role");
+            var systemRole = getSystemRole.options[getSystemRole.selectedIndex].text;
+            if (Hostname === "") {
+                alert("Please make sure you have entered a Hostname!");
+            } else if (IP === "") {
+                alert("Please make sure you have entered an IP Address!");
+            } else if (systemRole === "None") {
+                alert("Please make sure you have selected a System Role!");
+            } else if (ValidateIPaddress() === false){
+                alert("Please make sure you have entered a valid IP Address!");
+            }
+        }
+    </script>
+    <script>
+        function ValidateIPaddress() {
+            var IP = document.getElementById("ip").value;
+            if (IP === "127.0.0.1") {
+                return false;
+            }
+            if (/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(IP)) {
+                return true;
+            }
+            return false;
+        }
+    </script>
+</form>
+</body>
+</html>
